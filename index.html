@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,59 +9,55 @@
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; background: #fff; }
   h1 { font-size: 1.6rem; margin-bottom: .2rem; }
   h2 { font-size: 1.15rem; margin-top: 1.6rem; }
-  hr { margin: 2.5rem 0; border: 0; border-top: 1px solid #ccc; }
   a { color: #0b63c5; }
   .lang { margin: .3rem 0 1.2rem; }
   .meta { color: #666; margin-top: 0; }
   .card { border: 1px solid #ccc; border-radius: 12px; padding: 1rem 1.2rem; margin: 1rem 0; }
   .card h2 { margin-top: 0; }
-  footer { margin-top: 3rem; color: #666; font-size: .9rem; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #ddd; color: #666; font-size: .9rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; }
+  footer p { margin: 0; }
+  .game { display: flex; gap: 1rem; align-items: center; }
+  .game img { width: 88px; height: 88px; border-radius: 20%; flex: none; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  .game h2 { margin: 0 0 .3rem; }
+  .game p { margin: .3rem 0; }
+  footer .home { font-weight: 600; }
   @media (prefers-color-scheme: dark) {
     body { background: #14161c; color: #e8e8ee; }
     a { color: #7db7ff; }
-    hr, .card { border-color: #3a3d48; }
+    .card { border-color: #3a3d48; }
+    footer { border-top-color: #3a3d48; }
     .meta, footer { color: #a0a3ad; }
   }
 </style>
 </head>
 <body>
 
-<p class="lang"><a href="#fr">Français</a> · <a href="#en">English</a></p>
-
 <h1>PocketGames</h1>
-<p class="meta">Petits jeux mobiles gratuits, sans pub / Free mobile games, no ads</p>
+<p class="meta">Free mobile games, no ads</p>
 
-<section id="fr" lang="fr">
-<h2>Nos jeux</h2>
-<div class="card">
-<h2>Orbit: Space Hop</h2>
-<p>Saute d'orbite en orbite, vise le PERFECT et fais grimper ton combo.</p>
-<p><a href="orbit/support.html">Support</a> · <a href="orbit/privacy.html">Politique de confidentialité</a></p>
-</div>
-<div class="card">
-<h2>Too Close</h2>
-<p>Frôle les obstacles sans les toucher : plus tu passes près, plus tu gagnes.</p>
-<p><a href="too-close/support.html">Support</a> · <a href="too-close/privacy.html">Politique de confidentialité</a></p>
-</div>
-<p>Contact : <a href="mailto:dev.pocketgames@gmail.com">dev.pocketgames@gmail.com</a></p>
-</section>
-
-<hr>
-
-<section id="en" lang="en">
 <h2>Our games</h2>
-<div class="card">
+<div class="card game">
+<img src="icons/orbit.png" alt="Orbit: Space Hop app icon" width="88" height="88">
+<div>
 <h2>Orbit: Space Hop</h2>
 <p>Hop from orbit to orbit, aim for PERFECT and build your combo.</p>
-<p><a href="orbit/support.html">Support</a> · <a href="orbit/privacy.html">Privacy Policy</a></p>
+<!-- TODO: App Store / Google Play download links once published -->
+<p><a href="orbit/en/support.html">Support</a> · <a href="orbit/en/privacy.html">Privacy Policy</a></p>
 </div>
-<div class="card">
-<h2>Too Close</h2>
+</div>
+<div class="card game">
+<img src="icons/too-close.png" alt="Too Close: Risk It! app icon" width="88" height="88">
+<div>
+<h2>Too Close: Risk It!</h2>
 <p>Skim past obstacles without touching them: the closer you pass, the more you score.</p>
-<p><a href="too-close/support.html">Support</a> · <a href="too-close/privacy.html">Privacy Policy</a></p>
+<!-- TODO: App Store / Google Play download links once published -->
+<p><a href="too-close/en/support.html">Support</a> · <a href="too-close/en/privacy.html">Privacy Policy</a></p>
 </div>
-<p>Contact: <a href="mailto:dev.pocketgames@gmail.com">dev.pocketgames@gmail.com</a></p>
-</section>
+</div>
+<footer>
+<span>PocketGames</span>
+<span><a href="mailto:dev.pocketgames@gmail.com">dev.pocketgames@gmail.com</a></span>
+</footer>
 
 </body>
 </html>
